@@ -515,7 +515,7 @@ class Mappinggroup(object):
         return calcsize(self.format)
 
     def dump(self):
-        return pack(self.format, self.gid, self.angle, self.scale[0], self.scale[1],
+        return pack(self.format, self.id, self.angle, self.scale[0], self.scale[1],
                     self.offset[0], self.offset[1], self.normal[0], self.normal[1])
 
 class Geometrygroup(object):
